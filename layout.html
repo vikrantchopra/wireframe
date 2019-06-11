@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout - Materialize</title>
+
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s12 center">
+        <br />
+        <h5>Agility Enablement - Kolkata Group</h5>
+      </div>
+      <div class="col s12 center">
+        <div id="carousel2" class="carousel carousel-slider center">
+          <a class="carousel-item" href="#one!">
+            <img src="images/background.jpg" class="responsive-img"/>
+          </a>
+          <a class="carousel-item" href="#two!">
+            <img src="https://lorempixel.com/800/400/food/2" />
+          </a>
+          <a class="carousel-item" href="#three!">
+            <img src="https://lorempixel.com/800/400/food/3" />
+          </a>
+          <a class="carousel-item" href="#four!">
+            <img src="https://lorempixel.com/800/400/food/4" />
+          </a>
+        </div>
+      </div>
+
+      <div class="col s5 ">6-columns (one-half)</div>
+      <div class="col s5">6-columns (one-half)</div>
+    </div>
+
+    <div class="row">
+      <div class="grid-example col s12">
+        <span class="flow-text">I am always full-width (col s12)</span>
+      </div>
+      <div class="grid-example col s12 m6">
+        <span class="flow-text">I am full-width on mobile (col s12 m6)</span>
+      </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems2 = document.querySelectorAll("#carousel2");
+        var instance2 = M.Carousel.init(elems2, {
+          fullWidth: true,
+          indicators: true
+        });
+        //instance2.next();
+      });
+
+      // $('#carousel2').carousel({full_width: true});
+    </script>
+  </body>
+</html>
