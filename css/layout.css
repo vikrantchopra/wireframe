@@ -1,0 +1,35 @@
+body {
+  width: 98%;
+  margin: 1%;
+}
+
+#banner {
+  height: 15em !important;
+}
+
+#events {
+  height: 5em;
+}
+
+.card-panel {
+    width: 300px;
+}
+
+
+#content-left {
+  height: 20em;
+}
+
+#content-right {
+  height: 20em;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.nav-wrapper {
+  padding-left: 70px;
+  padding-right: 40px;
+}

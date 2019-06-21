@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Layout - Materialize</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/layout.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
+
+  <body>
+    <div class="row teal lighten-4">
+      <div class="col s10">
+        <nav class="green lighten-2">
+          <div class="nav-wrapper">
+            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div id="banner" class="parallax-container grey carousel carousel-slider">
+          <a class="carousel-item" href="#one!">
+            <img src="images/background.jpg" class="responsive-img" />
+          </a>
+          <a class="carousel-item" href="#two!">
+            <img src="https://lorempixel.com/800/400/food/2" />
+          </a>
+          <a class="carousel-item" href="#three!">
+            <img src="https://lorempixel.com/800/400/food/3" />
+          </a>
+          <a class="carousel-item" href="#four!">
+            <img src="https://lorempixel.com/800/400/food/4" />
+          </a>
+        </div>
+        <div id="events" class="grey lighten-2 carousel">
+          <div class="carousel-item" href="#one!">
+            <div class="card-panel blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="white-text">
+                  <br /><br />
+                  I am a very simple card. I am good at containing small bits of
+                  information.
+                </span>
+              </div>
+            </div>
+          </div>  
+
+          <div class="carousel-item" href="#one!">
+              <div class="card-panel blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="white-text">
+                    <br /><br />
+                    I am a very simple card. I am good at containing small bits of
+                    information.
+                  </span>
+                </div>
+              </div>
+            </div> 
+
+
+        </div>
+        <div id="content-left" class="light-green lighten-3 col s6"></div>
+        <div id="content-right" class="green lighten-3 col s6"></div>
+      
+      
+    </div>
+    <div class="col s2 grey lighten-3">
+        Hello. I m a sidebar
+      </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll("#banner");
+        var instance = M.Carousel.init(elems, {
+          fullWidth: true,
+          indicators: true
+        });
+
+        var evtElems = document.querySelectorAll("#events");
+        var evtInstance = M.Carousel.init(evtElems, {
+          dist:0,
+          shift:0,
+          padding:20,
+        });
+      });
+    </script>
+  </body>
+</html>
